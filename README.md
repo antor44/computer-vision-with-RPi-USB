@@ -1,6 +1,4 @@
-# computer-vision-with-RPi-USB
-
-Compatible codes of Coursera course Computer Vision with Embedded Machine Learning for USB cameras and virtual machines.
+# Compatible codes of Coursera course Computer Vision with Embedded Machine Learning for USB cameras and virtual machines
 
 I don't have a Raspberry Pi to test the course codes due to lack of stock and high prices, so I tried virtualizing the Raspberry Pi Desktop OS and connecting inexpensive Raspberry Pi compatible USB cameras. The tests are satisfactory for the first two modified codes of the course, I have not yet advanced further.
 
