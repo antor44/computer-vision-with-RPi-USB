@@ -126,6 +126,15 @@ while(True):
                         cv2.FONT_HERSHEY_PLAIN,
                         1,
                         (255, 255, 255))
+
+        # Draw rectangle on frame
+
+        img = np.array(img)
+        center = img.shape
+        x = int(center[1]/2 - res_width/2)
+        y = int(center[0]/2 - res_height/2)
+
+        cv2.rectangle(img, pt1=(x,y), pt2=(x+res_width,y+res_height), color=(0,255,0), thickness=1)
         
         # Show the frame
         cv2.imshow("Frame", img)
@@ -145,16 +154,7 @@ camera.release()
 
 # Capture image
 
-cv2.imwrite(filepath, img)
-
-# Cropping image
-
-img = Image.open(filepath)
-img = np.array(img)
-center = img.shape
-x = center[1]/2 - res_width/2
-y = center[0]/2 - res_height/2
-crop_img = img[int(y):int(y+res_height), int(x):int(x+res_width)]
+crop_img = img[y:y+res_height, x:x+res_width]
 
 cv2.imwrite(filepath, crop_img)
 
