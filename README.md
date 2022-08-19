@@ -35,3 +35,5 @@ It is also possible to use the mobile with DroidCam, in VirtualBox with Raspberr
 ## An image captured:
 
 ![An image captured](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/6.png)
+
+Image cropped and resized to configured sizes. Rotation is also available.
