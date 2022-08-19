@@ -22,6 +22,14 @@ https://es.aliexpress.com/item/1005003615538865.html
 
 It is also possible to use the mobile with DroidCam, in VirtualBox with Raspberry Pi Desktop it recognizes it as a USB device and it works very well, both by ADB and by Wifi, although it is necessary to install from the source.
 
+##pi_cam_preview_usb.py:
+
 ![pi_cam_preview_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/pi_cam_preview_usb.jpg)
+
+##pi_cam_capture_usb.py:
+
 ![pi_cam_capture_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/pi_cam_capture_usb.jpg)
+
+##An image captured:
+
 ![An image captured](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/6.png)
