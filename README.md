@@ -6,11 +6,11 @@ This is the Raspberry Pi Desktop OS:
 
 https://www.raspberrypi.com/software/raspberry-pi-desktop/
 
-Although it is a 32-bit 686 system, not ARM, it seems very compatible with the original Raspberry Pi. I have installed it on linux in VirtualBox and in Qemu/KVM. In VirtualBox the USB cameras do not work as well as in Qemu, in addition, a for the camera to a virtual machine is necessary, for example with this command in linux for the first webcam (.1):
+Although it is a 32-bit or i386 system, not ARM, and to avoid compatibility problems it is a good idea to choose a 32-bit processor or the qemu32 for the virtual machine, it seems very compatible with the original Raspberry Pi. I have installed it on linux in VirtualBox and in Qemu/KVM. In VirtualBox the USB cameras do not work as well as in Qemu, in addition, a for the camera to a virtual machine is necessary, for example with this command in linux for the first webcam (.1):
 
 VBoxManage controlvm "Raspberry Pi Desktop" webcam attach .1
 
-In Qemu/KVM it is not necessary and it works much better, with more resolution options although at low fps, it will surely work even better with IOMMU or passthrough.
+In Qemu/KVM it is not necessary that step and it works much better, with more resolution options although at low fps (15 fps), it will surely work even better with IOMMU or hardware passthrough.
 
 Some of the cameras I've tried:
 
