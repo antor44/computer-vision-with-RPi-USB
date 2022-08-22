@@ -15,6 +15,7 @@ import numpy as np
 from PIL import Image
 
 # Settings
+device = '/dev/video0'                  # Linux video device path
 res_width = 96                          # Resolution of camera (width)
 res_height = 96                         # Resolution of camera (height)
 rotation = 0                            # Camera rotation (0, 90, 180, or 270)
@@ -67,7 +68,7 @@ filepath = get_filepath()
 
 
 # Start the camera
-camera = cv2.VideoCapture('/dev/video0', cv2.CAP_V4L)
+camera = cv2.VideoCapture(device, cv2.CAP_V4L)
 camera.set(cv2.CAP_PROP_FRAME_WIDTH,res_width)
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT,res_height)
 
