@@ -20,7 +20,9 @@ Cheap camera with Zoom:
 
 https://es.aliexpress.com/item/1005003615538865.html
 
-It is also possible to use the mobile cameras with DroidCam, in VirtualBox with Raspberry Pi Desktop it recognizes it the same as if it were a USB webcam and it works very well, with the high quality of the mobile camera, both by ADB and by Wifi, although much better by ADB. While it must be installed from source, I seem to recall that, at least for the optional GUI application, it is not compatible with the 64-bit amd64 kernel on a 32-bit Linux system. I also encountered problems with the Else Impulse software.
+It is also possible to use the mobile cameras with DroidCam, in VirtualBox with Raspberry Pi Desktop it recognizes it the same as if it were a USB webcam and it works very well, with the high quality of the mobile camera, both by ADB and by Wifi, although much better by ADB. While it must be installed from source, I seem to recall that, at least for the optional GUI application, it is not compatible with the 64-bit amd64 kernel on a 32-bit Linux system. I also encountered problems with the Else Impulse software, it is not compatible with 32 bits kernel nor 64-bit amd64 kernel on a 32-bit Linux system.
+
+https://www.dev47apps.com/droidcam/linux/
 
 In short, the tests were satisfactory for the first two codes of the course, modified for USB cameras, but not for the following ones due to the incompatibility of the Edge Impulse software with linux i386 32 bits, although it is compatible with arm 32 bits and 64 bits.
 
