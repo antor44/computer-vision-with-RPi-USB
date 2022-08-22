@@ -81,9 +81,6 @@ while(True):
         # i.e. a single-column array, where each item in the column has the pixel RGB value
         ret, img = camera.read()
 
-        cv2.imwrite(filepath, img)
-        src = cv2.imread(filepath)
-
         # rotate image
         if rotation == 90:
             attr = 'ROTATE_90_CLOCKWISE'
@@ -93,7 +90,7 @@ while(True):
             attr = 'ROTATE_90_COUNTERCLOCKWISE'
 
         if rotation > 0:
-                img = cv2.rotate(src, getattr(cv2, attr))
+                img = cv2.rotate(img, getattr(cv2, attr))
                                             
         # Get timestamp for calculating actual framerate
         timestamp = cv2.getTickCount()
