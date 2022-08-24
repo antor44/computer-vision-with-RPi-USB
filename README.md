@@ -27,7 +27,9 @@ https://www.dev47apps.com/droidcam/linux/
 
 In short, the tests were satisfactory for the first two codes of the course, modified for USB cameras, but not for the following ones due to the incompatibility of the Edge Impulse software with linux i386 32 bits (although it is compatible with arm 32 bits and 64 bits).
 
-Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operating system, its repositories are all official Debian ones. It is then possible to install a 64-bit Debian system with the LXDE desktop, debian-live-11.4.0-amd64-lxde.iso from here:
+Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operating system, its repositories are all official Debian ones. It is then possible to install a 64-bit Debian system with the LXDE desktop, they are not aesthetically identical but the most important thing is to preserve similarity in the versions of the libraries between the virtualized system and an original RPI 4.
+
+debian-live-11.4.0-amd64-lxde.iso from here:
 
 https://www.debian.org/CD/live/
 
