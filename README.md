@@ -68,3 +68,9 @@ https://github.com/antor44/computer-vision-with-RPi-USB
 ![An image captured](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/6.png)
 
 Image cropped and resized to configured sizes. Rotation is also available.
+
+## dnn-live-inference-pi-cam_usb.py:
+
+![dnn-live-inference-pi-cam_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/dnn-live-inference-pi-cam_usb.jpg)
+
+dnn-live-inference-pi-cam_usb.py on a virtualized Debian 11 LXDE amd64.
