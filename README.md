@@ -36,7 +36,9 @@ https://www.debian.org/CD/live/
 Some help for a Linux virtualized with Qemu/KVM:
 
 https://askubuntu.com/questions/858649/how-can-i-copypaste-from-the-host-to-a-kvm-guest
-https://ostechnix.com/setup-a-shared-folder-between-kvm-host-and-guest/
+
+https://ostechnix.com/setup-a-shared-folder-between-kvm-host-and-guest
+
 https://superuser.com/questions/502205/libvirt-9p-kvm-mount-in-fstab-fails-to-mount-at-boot-time
 
 
