@@ -31,6 +31,8 @@ Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operatin
 
 https://wiki.debian.org/CrossGrading
 
+It would only be necessary to change the virtualizer configuration to a 64-bit processor or, if they were previously installed, uninstall VirtualBox Guest Additions.
+
 On a PC 64-bit Linux, there is no problem running Edge Impulse and the modified Python codes. The programs work on any amd64 64-bit linux, be it virtualized or bare metal, as long as the codes are modified for linux compatible USB cameras.
 
 Compatible sample codes for USB cameras on linux 64 bits or Raspberry PI arm:
