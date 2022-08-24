@@ -33,6 +33,12 @@ debian-live-11.4.0-amd64-lxde.iso from here:
 
 https://www.debian.org/CD/live/
 
+Some help for a Linux virtualized with Qemu/KVM:
+
+https://askubuntu.com/questions/858649/how-can-i-copypaste-from-the-host-to-a-kvm-guest
+https://ostechnix.com/setup-a-shared-folder-between-kvm-host-and-guest/
+https://superuser.com/questions/502205/libvirt-9p-kvm-mount-in-fstab-fails-to-mount-at-boot-time
+
 
 Or from a Raspberry Pi Desktop installation try to change the entire system to amd64 architecture, it would only be necessary to change the virtualizer configuration to a 64-bit processor or, if they were previously installed, uninstall VirtualBox Guest Additions. But several problems are to be expected due to some of Raspberry's own modifications:
 
