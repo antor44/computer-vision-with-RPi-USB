@@ -27,11 +27,15 @@ https://www.dev47apps.com/droidcam/linux/
 
 In short, the tests were satisfactory for the first two codes of the course, modified for USB cameras, but not for the following ones due to the incompatibility of the Edge Impulse software with linux i386 32 bits (although it is compatible with arm 32 bits and 64 bits).
 
-Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operating system, its repositories are all official Debian ones. It is then possible to install a 64-bit Debian system with the LXDE desktop or from a Raspberry Pi Desktop installation try to change the entire system to amd64 architecture, including all libraries, as indicated here:
+Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operating system, its repositories are all official Debian ones. It is then possible to install a 64-bit Debian system with the LXDE desktop, debian-live-11.4.0-amd64-lxde.iso from here:
+
+https://www.debian.org/CD/live/
+
+
+Or from a Raspberry Pi Desktop installation try to change the entire system to amd64 architecture, it would only be necessary to change the virtualizer configuration to a 64-bit processor or, if they were previously installed, uninstall VirtualBox Guest Additions. But several problems are to be expected due to some of Raspberry's own modifications:
 
 https://wiki.debian.org/CrossGrading
 
-It would only be necessary to change the virtualizer configuration to a 64-bit processor or, if they were previously installed, uninstall VirtualBox Guest Additions.
 
 On a PC 64-bit Linux, there is no problem running Edge Impulse and the modified Python codes. The programs work on any amd64 64-bit linux, be it virtualized or bare metal, as long as the codes are modified for linux compatible USB cameras.
 
