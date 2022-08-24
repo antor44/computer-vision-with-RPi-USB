@@ -24,9 +24,14 @@ It is also possible to use the mobile cameras with DroidCam, in VirtualBox with 
 
 https://www.dev47apps.com/droidcam/linux/
 
-In short, the tests were satisfactory for the first two codes of the course, modified for USB cameras, but not for the following ones due to the incompatibility of the Edge Impulse software with linux i386 32 bits, although it is compatible with arm 32 bits and 64 bits.
 
-It would have been great to run the course codes on the Raspberry Pi Desktop as it would be so close to the original Raspberry Pi, but I haven't been able to. It might still be possible by building libraries from source or using a Docker container. Anyway, the programs work on any 64-bit linux, be it virtualized or bare metal, as long as the codes are modified for linux compatible USB cameras.
+In short, the tests were satisfactory for the first two codes of the course, modified for USB cameras, but not for the following ones due to the incompatibility of the Edge Impulse software with linux i386 32 bits (although it is compatible with arm 32 bits and 64 bits).
+
+Raspberry Pi Desktop is actually an exact copy of Debian 11 or Bullseye operating system, its repositories are all official Debian ones. It is then possible to install a 64-bit Debian system with the LXDE desktop or from a Raspberry Pi Desktop installation try to change the entire system to amd64 architecture, including all libraries, as indicated here:
+
+https://wiki.debian.org/CrossGrading
+
+On a PC 64-bit Linux, there is no problem running Edge Impulse and the modified Python codes. The programs work on any amd64 64-bit linux, be it virtualized or bare metal, as long as the codes are modified for linux compatible USB cameras.
 
 Compatible sample codes for USB cameras on linux 64 bits or Raspberry PI arm:
 
