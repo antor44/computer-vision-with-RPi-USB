@@ -59,6 +59,7 @@ fps = 0
 camera = cv2.VideoCapture(device, cv2.CAP_V4L)
 camera.set(cv2.CAP_PROP_FRAME_WIDTH,res_width)
 camera.set(cv2.CAP_PROP_FRAME_HEIGHT,res_height)
+camera.set(cv2.CAP_PROP_MODE, 0) # CV_CAP_MODE_BGR
 
 # Initial countdown timestamp
 countdown_timestamp = cv2.getTickCount()
@@ -69,10 +70,6 @@ while(True):
         # Acquire frame and expand frame dimensions to have shape: [1, None, None, 3]
         # i.e. a single-column array, where each item in the column has the pixel RGB value
         ret, frame = camera.read()
-
-        # Print image mode (it should be RGB for USB cameras)
-        #im = Image.fromarray(np.uint8(frame))
-        #print(im.mode)
 
         # rotate image
         if rotation == 90:
@@ -107,7 +104,7 @@ while(True):
         img_resize = cv2.resize(img, (img_width, img_height))
         
         # Convert image to grayscale
-        img_resize = cv2.cvtColor(img_resize, cv2.COLOR_RGB2GRAY)
+        img_resize = cv2.cvtColor(img_resize, cv2.COLOR_BGR2GRAY)
         
         # Convert image to 1D vector of floating point numbers
         features = np.reshape(img_resize, (img_width * img_height)) / 255
