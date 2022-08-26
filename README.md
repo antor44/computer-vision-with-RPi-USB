@@ -74,3 +74,11 @@ Image cropped and resized to configured sizes. Rotation is also available.
 ![dnn-live-inference-pi-cam_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/dnn-live-inference-pi-cam_usb.jpg)
 
 dnn-live-inference-pi-cam_usb.py on a virtualized Debian 11 LXDE amd64.
+
+## dnn-live-colorspace_usb.py:
+
+![dnn-live-colorspace_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/dnn-live-colorspace_usb.jpg)
+
+dnn-live-colorspace_usb.py to check if the color space of the captured images is BGR, in this case the first pixel (red) is [x x 255] (BGR).
+
+
