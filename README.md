@@ -79,6 +79,6 @@ dnn-live-inference-pi-cam_usb.py on a virtualized Debian 11 LXDE amd64.
 
 ![dnn-live-colorspace_usb.py](https://github.com/antor44/computer-vision-with-RPi-USB/blob/main/dnn-live-colorspace_usb.jpg)
 
-dnn-live-colorspace_usb.py to check if the color space of the captured images is BGR, the codes for the Raspberry Pi Camera Module are for the BGR color space and color ordering, the same as these codes for USB cameras, due to OpenCV library works on BGR color ordering. In this case the first pixel (red) is [x x 255] (BGR).
+dnn-live-colorspace_usb.py to check if the color space of captured images is BGR, the codes for the Raspberry Pi camera module are for BGR color space and color order, just like these codes for cameras USB, due to the OpenCV library works in BGR color order. In this case, the first pixel (red) is [x x 255] (BGR).
 
 
