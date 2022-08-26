@@ -17,7 +17,6 @@ License: Apache-2.0 (apache.org/licenses/LICENSE-2.0)
 
 import cv2
 import numpy as np
-from PIL import Image
 
 
 # Settings
