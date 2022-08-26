@@ -13,7 +13,6 @@ License: Apache-2.0 (apache.org/licenses/LICENSE-2.0)
 import os, sys, time
 import cv2
 import numpy as np
-from PIL import Image
 from edge_impulse_linux.runner import ImpulseRunner
 
 # Settings
