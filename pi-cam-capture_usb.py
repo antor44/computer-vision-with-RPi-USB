@@ -16,8 +16,10 @@ import numpy as np
 
 # Settings
 device = '/dev/video0'                  # Linux video device path
-res_width = 96                          # Resolution of camera (width)
-res_height = 96                         # Resolution of camera (height)
+cam_width = 320                         # Resolution of camera (width)
+cam_height = 240                        # Resolution of camera (height)
+res_width = 96                          # Resolution of image (width)
+res_height = 96                         # Resolution of image (height)
 rotation = 0                            # Camera rotation (0, 90, 180, or 270)
 draw_fps = False                        # Draw FPS on screen
 save_path = "./"                        # Save images to current directory
@@ -69,8 +71,8 @@ filepath = get_filepath()
 
 # Start the camera
 camera = cv2.VideoCapture(device, cv2.CAP_V4L)
-camera.set(cv2.CAP_PROP_FRAME_WIDTH,res_width)
-camera.set(cv2.CAP_PROP_FRAME_HEIGHT,res_height)
+camera.set(cv2.CAP_PROP_FRAME_WIDTH,cam_width)
+camera.set(cv2.CAP_PROP_FRAME_HEIGHT,cam_height)
 
 # Initial countdown timestamp
 countdown_timestamp = cv2.getTickCount()
@@ -138,7 +140,7 @@ while(True):
         cv2.imshow("Frame", img)
         
         
-        # Calculate framrate
+        # Calculate framerate
         frame_time = (cv2.getTickCount() - timestamp) / cv2.getTickFrequency()
         fps = 1 / frame_time
         
