@@ -42,7 +42,7 @@ https://ostechnix.com/setup-a-shared-folder-between-kvm-host-and-guest
 https://superuser.com/questions/502205/libvirt-9p-kvm-mount-in-fstab-fails-to-mount-at-boot-time
 
 
-Or from a Raspberry Pi Desktop installation try to change the entire system to amd64 architecture, it would only be necessary to change the virtualizer configuration to a 64-bit processor or, if they were previously installed, uninstall VirtualBox Guest Additions. But several problems are to be expected due to some of Raspberry's own modifications:
+An alternative is to try to change the entire system to the amd64 architecture from a 32-bit Raspberry Pi Desktop installation, to try this option it would only be necessary to change the virtualizer configuration to a 64-bit processor. But several problems are to be expected due to some Raspberry-specific modifications that will not be available in 64-bit:
 
 https://wiki.debian.org/CrossGrading
 
